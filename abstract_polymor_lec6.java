@@ -1,5 +1,40 @@
 package oops;
 
+ //interface
+
+interface   Bike{
+    void gear();
+    void start();
+    void accerlare();
+
+
+}
+class Splender implements  Bike{
+    public void gear(){
+        System.out.println("gear");
+    }
+    public void start(){
+        System.out.println("start");
+    }
+    public void accerlare(){
+        System.out.println("accerale");
+    }
+}
+class Scooty implements  Bike{
+    public void gear(){
+        System.out.println("gear scooty");
+    }
+    public void start(){
+        System.out.println("start scooty");
+    }
+    public void accerlare(){
+        System.out.println("accerale scooty");
+    }
+}
+
+
+//abstract
+
 
  abstract class Car{
     void start(){
@@ -38,5 +73,17 @@ c1.brake();
 Car c2=new fuelcar();
 c2.brake();
 c2.accelerate();
+
+
+Bike b1=new Splender();
+b1.accerlare();
+b1.gear();
+b1.start();
+
+
+        Bike b2=new Scooty();
+        b2.accerlare();
+        b2.gear();
+        b2.start();
     }
 }
