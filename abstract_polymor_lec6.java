@@ -87,3 +87,35 @@ b1.start();
         b2.start();
     }
 }
+
+
+//overloading
+class Human{
+    void a(){
+        System.out.println("hello");
+    }
+    void b(){
+        System.out.println("hii");
+    }
+        }
+
+        //overridding
+        class Cow{
+    void a(){
+        System.out.println("arpit");
+    }
+    void b(){
+        System.out.println("hi");
+    }
+        }
+        //overloading
+class Calculator {
+
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
